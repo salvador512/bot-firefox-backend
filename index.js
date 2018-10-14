@@ -2,8 +2,9 @@
 
 var mongoose = require('mongoose');
 var app = require('./app');
-var port = 3700;
-var db = 'mongodb://localhost:27017/firefox-bot';
+var config = require('./config')
+var port = config.port;
+var db = config.db;
 
 mongoose.Promise = global.Promise;
 mongoose.connect(db)
