@@ -33,7 +33,7 @@ function getOneUserActive(req,res) {
 			})
 		}		
 		return res.status(200).send({
-			user: user
+			user: [user]
 		})		
 
 	})
