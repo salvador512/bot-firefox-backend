@@ -3,8 +3,8 @@
 var mongoose = require('mongoose');
 var app = require('./app');
 var config = require('./config')
-var port = config.port;
-var db = config.db;
+var port = process.env.PORT;
+var db = 'mongodb://heroku_w0d1h20w:29ja31qteobu9o79qtengkv3ue@ds131753.mlab.com:31753/heroku_w0d1h20w';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(db)
