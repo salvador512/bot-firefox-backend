@@ -1,0 +1,29 @@
+{
+  "name": "tecnella-web-api",
+  "version": "1.0.0",
+  "description": "Backend tecnella API REST FULL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/tecnella/tecnella-web-api.git"
+  },
+  "author": "Salvador Campanella [salvador512]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/tecnella/tecnella-web-api/issues"
+  },
+  "homepage": "https://gitlab.com/tecnella/tecnella-web-api#README",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.1.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
