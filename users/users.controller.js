@@ -19,6 +19,7 @@ function home(req, res) {
 }
 
 function getOneUserActive(req,res) {
+	res.setHeader('content-type', 'text/plain');
 	var user = new User();
 	User.findOneAndUpdate({status:true},{$set:{status:false}},{new: true},function(err, user) {
 		if (err) {
